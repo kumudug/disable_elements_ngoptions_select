@@ -1,10 +1,28 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="app">
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8"/>
+    <link href="Lib/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="Lib/bootstrap/dist/css/bootstrap-theme.min.css" rel="stylesheet" />
 </head>
-<body>
+<body ng-controller="mainController as vm">
+    <div class="container">
+        <form>
+            <div class="form-group">
+                <label for="exampleInputEmail1">List with disabled items [item3 and item8 are disabled and can't be selected]</label>
+                <select class="form-control" ng-model="vm.boundVar"
+                        ng-options="o.value disable when vm.disabled(o) for o in vm.items">
+                    <option value=""></option>
+                </select>
+            </div>
+        </form>
+    </div>
 
+    <script src="Lib/jquery/dist/jquery.min.js"></script>
+    <script src="Lib/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="Lib/angular/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/main.ctrl.js"></script>
 </body>
 </html>
