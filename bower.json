@@ -1,0 +1,23 @@
+{
+  "name": "disable_elements_ngoptions_select",
+  "homepage": "https://github.com/kumudug/disable_elements_ngoptions_select",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "kumudu gunasekara"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "./Lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "angular": "^1.5.8"
+  }
+}
